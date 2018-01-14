@@ -1,0 +1,29 @@
+{
+  "name": "setting_environment",
+  "version": "1.0.0",
+  "description": "Create an environment for testing with TS and Jasmine",
+  "main": "index.js",
+  "scripts": {
+    "test": "karma start",
+    "build": "webpack"
+  },
+  "keywords": [
+    "TS",
+    "Jasmine"
+  ],
+  "author": "Jaime Salas",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jasmine": "^2.8.4",
+    "@types/node": "^9.3.0",
+    "awesome-typescript-loader": "^3.4.1",
+    "jasmine": "^2.8.0",
+    "karma": "^2.0.0",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-jasmine": "^1.1.1",
+    "karma-sourcemap-loader": "^0.3.7",
+    "karma-webpack": "^2.0.9",
+    "typescript": "^2.6.2",
+    "webpack": "^3.10.0"
+  }
+}

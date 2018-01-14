@@ -1,11 +1,12 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { GameDetailComponent } from './game-detail/game-detail.component';
 import { SellerComponent } from './seller/seller.component';
+import { GameService } from './game.service';
 
 @NgModule({
   declarations: [
@@ -16,9 +17,11 @@ import { SellerComponent } from './seller/seller.component';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpClientModule
   ],
-  providers: [],
+  providers: [
+    GameService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

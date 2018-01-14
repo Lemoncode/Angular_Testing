@@ -1,0 +1,12 @@
+<div *ngFor="let task of filteredTasks">
+  <app-collapsible>
+    <div collapsible-head>
+      <label>Task Description:</label>
+      <span>{{task.description}}</span>
+    </div>
+    <div collapsible-body>
+      <h4 *ngIf="task.isAssigned">{{task.assigned}}</h4>
+      <span [class]="task.state | state: 'pending':'done':'inprogress'"></span>
+    </div>
+  </app-collapsible>
+</div>
